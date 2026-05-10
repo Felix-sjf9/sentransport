@@ -5,11 +5,15 @@ function ListeLignes({ lignes }) {
   return (
     <div className="liste-lignes">
 
-      <h2>Lignes Dakar Dem Dikk</h2>
+      <h2 className="liste-titre">
+        Lignes Dakar Dem Dikk
+      </h2>
 
-      <p>{lignes.length} lignes disponibles</p>
+      <p className="liste-description">
+        {lignes.length} lignes disponibles
+      </p>
 
-      {lignes.map(ligne => (
+      {lignes.map((ligne) => (
         <LigneBus
           key={ligne.id}
           numero={ligne.numero}
